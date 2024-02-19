@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        width: 500px;
+        border-collapse: collapse;
+    }
+    td, th {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+    thead, tfoot{
+        background-color: gray;
+        color: white;
+    }
+    tbody > tr:nth-child(2n){
+        background-color: lightgray;
+    }
+
+</style>
+
+</head>
+<body>
+    <h1>uso de tabelas grandes</h1>
+    <!--anatomia para tabelas granes
+    table
+        caption(legenda da tabela)
+        head
+            tr, td, th
+        body
+            tr, td, th
+        foot
+            tr, td, th
+    -->
+<table>
+    <caption> federação do brasilisilsil</caption>
+    <thead>
+        <tr>
+            <th scope="col">estado</th>
+            <th scope="col">população</th>           
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>SAO PAULO</td>
+        <td>45 919 049</td>
+    </tr>
+    <tr>
+        <td>minas gerais</td>
+        <td>111111 55</td>
+    </tr>
+    <tr>
+        <td>rio de janeiro</td>
+        <td>9999999</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <th scope="row">total de habitantes</th>
+        <td>0000</td>
+    </tr>
+</tfoot>
+</table>
+</body>
+</html>
